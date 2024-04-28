@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom'
-import LogoTitle from '../../assets/images/logo-B.png'
+import LogoTitle from '../../assets/images/logo-linesB.png'
 import './index.scss'
 import { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import Logo from './Logo'
+import Loader from 'react-loaders'
+
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -65,6 +67,7 @@ const Home = () => {
         </div>
         <Logo />
       </div>
+      <Loader type="pacman" />
     </>
   )
 }
