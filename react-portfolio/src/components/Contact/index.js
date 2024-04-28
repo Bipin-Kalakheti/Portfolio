@@ -2,6 +2,8 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import { useEffect, useRef, useState } from 'react'
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+
 import emailjs from '@emailjs/browser'
 
 const Contact = () => {
@@ -17,25 +19,19 @@ const Contact = () => {
     return () => clearTimeout(timer)
   }, [])
 
-
-
   const sendEmail = (e) => {
     e.preventDefault()
-    emailjs.sendForm(
-        'gmail',
-        'ajkadkasj',
-        refForm.current,
-        'dajfakfakfjalf'
-    )
-    .then (
-    () => {
-        alert('Message sent!')
-        window.location.reload(false)
-    },
-    () => {
-        alert('Oops! There was an error.')
-    }
-    )
+    emailjs
+      .sendForm('gmail', 'ajkadkasj', refForm.current, 'dajfakfakfjalf')
+      .then(
+        () => {
+          alert('Message sent!')
+          window.location.reload(false)
+        },
+        () => {
+          alert('Oops! There was an error.')
+        }
+      )
   }
 
   return (
@@ -83,6 +79,26 @@ const Contact = () => {
               </ul>
             </form>
           </div>
+        </div>
+        <div className="info-map">
+          Bipin Kalakheti,
+          <br />
+          Canada,
+          <br />
+          265 Donlands avenue <br />
+          Toronto, Ontario <br />
+          <span>bipinkalakheti7@gmail.com</span>
+        </div>
+        <div className="map-wrap">
+          <MapContainer
+            center={[43.68831932185513, -79.34027664103503]}
+            zoom={13}
+          >
+            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+            <Marker position={[43.68831932185513, -79.34027664103503]}>
+              <Popup>Bipin lives here, come over for a cup of coffee :)</Popup>
+            </Marker>
+          </MapContainer>
         </div>
       </div>
       <Loader type="pacman" />
