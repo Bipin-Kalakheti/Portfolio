@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
-import Logos from '../../assets/images/logo-linesB.png'
+import Logos from '../../assets/images/logo-s.png'
 import LogoSubtitle from '../../assets/images/logo_subB.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -69,7 +69,7 @@ const Sidebar = () => {
           </NavLink>
           <FontAwesomeIcon
             icon={faClose}
-            color="#ffd700"
+            color="#1AAFBC"
             size="3x"
             className="close-icon"
             onClick={() => setShowNav(false)}
@@ -99,7 +99,7 @@ const Sidebar = () => {
         <FontAwesomeIcon
           onClick={() => setShowNav(true)}
           icon={faBars}
-          color="#ffd700"
+          color="#1AAFBC"
           size="3x"
           className="hamburger-icon"
         />

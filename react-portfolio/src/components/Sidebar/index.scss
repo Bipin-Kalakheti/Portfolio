@@ -46,7 +46,7 @@
       }
 
       &:hover {
-        color: #ffd700;
+        color: #1aafbc;
         i {
           transform: rotate(360deg);
         }
@@ -99,7 +99,7 @@
 
     a.active {
       svg {
-        color: #ffd700;
+        color: #1aafbc;
       }
     }
   }
@@ -122,7 +122,7 @@
         line-height: 16px;
 
         &:hover svg {
-          color: #ffd700;
+          color: #1aafbc;
         }
       }
     }
