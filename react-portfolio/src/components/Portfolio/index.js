@@ -3,6 +3,8 @@ import './index.scss'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import portfolioData from '../../data/portfolio.json'
+import ProjectCard from '../../common/ProjectCard'
+import ChatApp from '../../assets/images/logo_sub.png'
 
 const Portfolio = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -50,7 +52,20 @@ const Portfolio = () => {
             letterClass={letterClass}
           />
         </h1>
-        <div>{renderPortfolio(portfolioData.portfolio)}</div>
+        <div className="projectsContainer scroll-animate">
+          <ProjectCard
+            src={ChatApp}
+            link="https://github.com"
+            projectTitle="ChatApp"
+            projectDescription="Online Chatting Web App"
+          />
+          <ProjectCard
+            src={ChatApp}
+            link="https://github.com"
+            projectTitle="ChatApp"
+            projectDescription="Online Chatting Web App"
+          />
+        </div>
       </div>
       <Loader type="pacman" />
     </>
