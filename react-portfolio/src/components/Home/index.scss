@@ -6,75 +6,104 @@
     transform: tanslateY(-50%);
     width: 40%;
     max-height: 90%;
+
+    h1 {
+      color: #812626;
+      font-size: 53px;
+      margin: 0;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+
+      &::before {
+        content: '<h1>';
+        font-family: 'La Belle Aurore';
+        color: #1aafbc;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -40px;
+        left: 15px;
+        opacity: 0.6;
+      }
+
+      &::after {
+        content: '<h1/>';
+        font-family: 'La Belle Aurore';
+        color: #1aafbc;
+        font-size: 18px;
+        position: absolute;
+        margin-top: 18px;
+        margin-left: 20px;
+        animation: fadeIn 1s 1.7s backwards;
+        opacity: 0.6;
+      }
+    }
+
+    h2 {
+      color: #8d8d8d;
+      font-size: 11px;
+      margin-top: 20px;
+      font-family: sans-serif;
+      font-weight: 400;
+      letter-spacing: 3px;
+      animation: fadeIn 1s 1.8s backwards;
+    }
+
+    div {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 20px;
+
+      button {
+        /* Variables */
+        --button_radius: 0.75em;
+        --button_color: #e8e8e8;
+        --button_outline_color: #000000;
+        font-size: 17px;
+        font-weight: bold;
+        border: none;
+        border-radius: var(--button_radius);
+        background: var(--button_outline_color);
+        cursor: pointer;
+      }
+
+      .button_top {
+        display: block;
+        box-sizing: border-box;
+        border: 2px solid var(--button_outline_color);
+        border-radius: var(--button_radius);
+        padding: 0.75em 1.5em;
+        background: var(--button_color);
+        color: var(--button_outline_color);
+        transform: translateY(-0.2em);
+        transition: transform 0.1s ease;
+      }
+
+      button:hover .button_top {
+        /* Pull the button upwards when hovered */
+        transform: translateY(-0.33em);
+      }
+
+      button:active .button_top {
+        /* Push the button downwards when pressed */
+        transform: translateY(0);
+      }
+    }
   }
-  h1 {
-    color: #fff;
-    font-size: 53px;
-    margin: 0;
-    font-family: 'Coolvetica';
-    font-weight: 400;
 
-    &::before {
-      content: '<h1>';
-      font-family: 'La Belle Aurore';
-      color: #1aafbc;
-      font-size: 18px;
-      position: absolute;
-      margin-top: -40px;
-      left: 15px;
-      opacity: 0.6;
-    }
+  .img-container {
+    width: 400px;
+    height: 100vh;
+    position: absolute;
+    right: 15%;
+    bottom: -20;
+    left: auto;
+    top: 80px;
 
-    &::after {
-      content: '<h1/>';
-      font-family: 'La Belle Aurore';
-      color: #1aafbc;
-      font-size: 18px;
-      position: absolute;
-      margin-top: 18px;
-      margin-left: 20px;
-      animation: fadeIn 1s 1.7s backwards;
-      opacity: 0.6;
-    }
-
-    img {
-      width: 50px;
-      margin-left: 20px;
-      opacity: 0;
-      height: auto;
-      animation: rotateIn 1s linear both;
-      animation-delay: 1.4s;
-    }
-  }
-
-  h2 {
-    color: #8d8d8d;
-    font-size: 11px;
-    margin-top: 20px;
-    font-family: sans-serif;
-    font-weight: 400;
-    letter-spacing: 3px;
-    animation: fadeIn 1s 1.8s backwards;
-  }
-
-  .flat-button {
-    color: #1aafbc;
-    font-size: 13px;
-    font-weight: 400;
-    letter-spacing: 4px;
-    font-family: sans-serif;
-    text-decoration: none;
-    padding: 10px 18px;
-    border: 1px solid #1aafbc;
-    margin-top: 25px;
-    float: left;
-    animation: fadeIn 1s 1.8s backwards;
-    white-space: nowrap;
-
-    &:hover {
-      background: #1aafbc;
-      color: #333;
-    }
+    margin: auto;
+    opacity: 1;
+  
   }
 }
 @media screen and (max-width: 1200px) {

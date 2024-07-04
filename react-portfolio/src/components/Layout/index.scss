@@ -44,7 +44,7 @@
   h1 {
     font-size: 53px;
     font-family: 'Coolvetica';
-    color: #1aafbc;
+    color: var(--main-color);
     font-weight: 400;
     margin-top: 0;
     position: relative;
@@ -56,6 +56,7 @@
       font-family: 'La Belle Aurore';
       font-size: 18px;
       position: absolute;
+      color: var(--secondary-color);
       margin-top: -10px;
       left: -10px;
       opacity: 0.6;
@@ -68,6 +69,7 @@
       font-size: 18px;
       position: absolute;
       margin-left: 20px;
+      color: var(--secondary-color);
       left: -30px;
       bottom: -20px;
       opacity: 0.6;

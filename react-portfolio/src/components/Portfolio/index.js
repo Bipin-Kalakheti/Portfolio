@@ -4,48 +4,43 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import portfolioData from '../../data/portfolio.json'
 import ProjectCard from '../../common/ProjectCard'
-import ChatApp from '../../assets/images/logo_sub.png'
+import ChatApp from '../../assets/images/ChatApp.png'
+import Tomato from '../../assets/images/tomato.png'
+import Github from '../Icons/Github'
+import Live from '../Icons/Live'
+import Express from '../Icons/Express'
+import Reacts from '../Icons/React'
+import Firebase from '../Icons/Firebase'
+import Node from '../Icons/Node'
+import Mongodb from '../Icons/Mongodb'
+import Stripe from '../Icons/Stripe'
 
 const Portfolio = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
+  const chatAppTools = [<Reacts />, <Firebase />]
+  const tomatoTools = [
+    <Reacts />,
+    <Node />,
+    <Express />,
+    <Mongodb />,
+    <Stripe />,
+  ]
 
   useEffect(() => {
-    console.log(portfolioData)
     const timer = setTimeout(() => {
       setLetterClass('text-animate-hover')
+
+      document.querySelector('.text-zone').startTime = performance.now()
     }, 3000)
 
+    // Return a cleanup function to clear the timeout if the component unmounts
     return () => clearTimeout(timer)
-  })
+  }, [])
 
-  const renderPortfolio = (portfolio) => {
-    return (
-      <div className="images-container">
-        {portfolio.map((port, idx) => {
-          return (
-            <div className="image-box" key={idx}>
-              <img
-                src={port.cover}
-                alt="portfolio"
-                className="portfolio-image"
-              />
-              <div className="content">
-                <p className="title">{port.title}</p>
-                <h4 className="description">{port.description}</h4>
-                <button className="btn" onClick={() => window.open(port.url)}>
-                  View
-                </button>
-              </div>
-            </div>
-          )
-        })}
-      </div>
-    )
-  }
   return (
     <>
       <div className="container portfolio-page">
-        <h1 className="page-title">
+        <h1 className="page-title text-zone">
           <AnimatedLetters
             idx={15}
             strArray={'Portfolio'.split('')}
@@ -58,12 +53,14 @@ const Portfolio = () => {
             link="https://github.com"
             projectTitle="ChatApp"
             projectDescription="Online Chatting Web App"
+            toolsUsed={chatAppTools}
           />
           <ProjectCard
-            src={ChatApp}
+            src={Tomato}
             link="https://github.com"
-            projectTitle="ChatApp"
-            projectDescription="Online Chatting Web App"
+            projectTitle="Tomato"
+            projectDescription="Food Delivery Web App"
+            toolsUsed={tomatoTools}
           />
         </div>
       </div>

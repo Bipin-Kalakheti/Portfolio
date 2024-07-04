@@ -8,6 +8,7 @@ import {
   faClose,
   faEnvelope,
   faHome,
+  faScrewdriverWrench,
   faSuitcase,
   faUser,
 } from '@fortawesome/free-solid-svg-icons'
@@ -56,7 +57,7 @@ const Sidebar = () => {
             to="/portfolio"
             onClick={() => setShowNav(false)}
           >
-            <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
+            <FontAwesomeIcon icon={faScrewdriverWrench} color="#4d4d4e" />
           </NavLink>
           <NavLink
             exact="true"

@@ -1,48 +1,32 @@
-import { Link } from 'react-router-dom'
-import LogoTitle from '../../assets/images/logo-s.png'
 import './index.scss'
 import { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
-import Logo from './Logo'
 import Loader from 'react-loaders'
-
-import { useRef } from 'react'
-// import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
-// import gsap from 'gsap-trial'
+import HeroImg from '../../assets/images/hero-img.png'
+import Resume from '../../assets/images/cv.pdf'
 
 const Home = () => {
-  const bgRef = useRef()
-  const outlineLogoRef = useRef()
-  const solidLogoRef = useRef()
-  const didAnimate = useRef(false) // Add this useRef to track if animation has already run
+  const handleMouseEnter = (event) => {
+    const element = event.target
+    const animationDelay = parseFloat(
+      window.getComputedStyle(element).animationDelay
+    )
+    const animationDuration = parseFloat(
+      window.getComputedStyle(element).animationDuration
+    )
+    const totalAnimationTime = animationDelay + animationDuration
 
-  // useEffect(() => {
-  //   if (didAnimate.current) return // Check if animation has run before, if yes, do nothing
-  //   didAnimate.current = true
-  //   gsap.registerPlugin(DrawSVGPlugin)
-
-  //   gsap
-  //     .timeline()
-  //     .to(bgRef.current, {
-  //       duration: 1,
-  //       opacity: 1,
-  //     })
-  //     .from(outlineLogoRef.current, {
-  //       drawSVG: 0,
-  //       duration: 15,
-  //     })
-  //   gsap.fromTo(
-  //     solidLogoRef.current,
-  //     {
-  //       opacity: 0,
-  //     },
-  //     {
-  //       opacity: 1,
-  //       delay: 2,
-  //       duration: 4,
-  //     }
-  //   )
-  // }, [])
+    // Current time since the element was rendered
+    const currentTime =
+      performance.now() - element.closest('.text-zone').startTime
+    console.log(currentTime)
+    if (currentTime >= totalAnimationTime * 1000) {
+      element.classList.remove('text-animate-hover')
+      // Trigger a reflow in between removing and adding the class back
+      void element.offsetWidth
+      element.classList.add('text-animate-hover')
+    }
+  }
 
   const [letterClass, setLetterClass] = useState('text-animate')
   const nameArray = ['i', 'p', 'i', 'n']
@@ -66,6 +50,7 @@ const Home = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLetterClass('text-animate-hover')
+      document.querySelector('.text-zone').startTime = performance.now()
     }, 4000)
 
     // Return a cleanup function to clear the timeout if the component unmounts
@@ -77,15 +62,41 @@ const Home = () => {
       <div className="container home-page">
         <div className="text-zone">
           <h1>
-            <span className={letterClass}>H</span>
-            <span className={`${letterClass} _12`}>i</span>
-            <span className={`${letterClass} _13`}>,</span>
+            <span className={letterClass} onMouseEnter={handleMouseEnter}>
+              H
+            </span>
+            <span
+              className={`${letterClass} _12`}
+              onMouseEnter={handleMouseEnter}
+            >
+              i
+            </span>
+            <span
+              className={`${letterClass} _13`}
+              onMouseEnter={handleMouseEnter}
+            >
+              ,
+            </span>
             <br />
-            <span className={`${letterClass} _14`}>I</span>
-            <span className={`${letterClass} _15`}>'m</span>
-            {/* <img src={LogoTitle} alt="developer" /> */}
-            
-
+            <span
+              className={`${letterClass} _14`}
+              onMouseEnter={handleMouseEnter}
+            >
+              I
+            </span>
+            <span
+              className={`${letterClass} _15`}
+              onMouseEnter={handleMouseEnter}
+            >
+              'm
+            </span>
+            <span> </span>
+            <span
+              className={`${letterClass} _15`}
+              onMouseEnter={handleMouseEnter}
+            >
+              B
+            </span>
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
@@ -99,11 +110,23 @@ const Home = () => {
             />
           </h1>
           <h2> Frontend Developer / Python Developer / Gamer</h2>
-          <Link to="/contact" className="flat-button">
-            CONTACT ME
-          </Link>
+          <div>
+            <a href={Resume} download>
+              <button>
+                <span class="button_top"> Resume</span>
+              </button>
+            </a>
+
+            <a href="/contact">
+              <button>
+                <span class="button_top"> Contact Me</span>
+              </button>
+            </a>
+          </div>
         </div>
-        <Logo />
+        <div className="img-container">
+          <img src={HeroImg} alt="" />
+        </div>
       </div>
       <Loader type="pacman" />
     </>
