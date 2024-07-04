@@ -1,3 +1,4 @@
+@import 'animate.css';
 .home-page {
   .text-zone {
     position: absolute;
@@ -104,7 +105,15 @@
     top: 80px;
 
     margin: auto;
-    opacity: 1;
+
+    img {
+      opacity: 0;
+      animation: fadeInBottomRight 1s, fadeIn 0.5s forwards;
+
+      &:nth-of-type(1) {
+        animation-delay: 1s;
+      }
+    }
   }
 }
 @media screen and (max-width: 1200px) {
@@ -156,5 +165,11 @@
         margin: auto;
       }
     }
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
   }
 }

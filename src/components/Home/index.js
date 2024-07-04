@@ -109,7 +109,10 @@ const Home = () => {
               idx={22}
             />
           </h1>
-          <h2> Frontend Developer / Python Developer / Gamer</h2>
+          <h2>
+            Aspiring Software Developer / Web Development Enthusiast /
+            Freelancer
+          </h2>
           <div>
             <a href={Resume} download>
               <button>
