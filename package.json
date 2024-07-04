@@ -1,6 +1,6 @@
 {
-  "homepage": "http://bipinkalakheti.github.io/PORTFOLIO/",
-  "name": "PORTFOLIO",
+  "homepage": "http://bipinkalakheti.github.io/Portfolio/",
+  "name": "Portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
