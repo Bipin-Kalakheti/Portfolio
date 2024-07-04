@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import Loader from 'react-loaders'
+import Loader from '../Loader/index'
 
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
@@ -74,19 +74,29 @@ const About = () => {
           </h1>
           <div>
             <p>
-              I am a full stack developer with a passion for creating beautiful
-              and functional web applications. I have a strong background in web
-              development and have worked with a variety of technologies
-              including JavaScript, React, Node.js, Express.js, MongoDB, and
-              MySQL.
+              Hello! I'm Bipin Kalakheti, a passionate Web Developer based in
+              Toronto, ON, Canada. Originally from Nepal, I recently graduated
+              with a Software Engineering Technician Diploma from Centennial
+              College. With a strong foundation in software engineering, I am
+              dedicated to creating innovative and efficient web solutions.
             </p>
             <p>
-              I am currently seeking a full-time position as a full stack
-              developer in the San Francisco Bay Area.
+              I specialize in web development and have worked on projects like a
+              real-time chat application using React and Firebase, and a Zomato
+              clone using the MERN stack. These projects showcase my ability to
+              build dynamic and user-friendly applications. I also have
+              experience with programming languages such as C, Python, and Java.
+            </p>
+            <p>
+              Currently, I am seeking internship or junior web developer roles
+              where I can apply my skills and grow in the tech industry. I'm
+              excited about opportunities that allow me to work with creative
+              teams and contribute to impactful projects.
             </p>
             <p>
               If you would like to learn more about me or have any questions,
-              please feel free to reach out to me.
+              please feel free to reach out to me. Let's create something
+              amazing together!
             </p>
           </div>
         </div>

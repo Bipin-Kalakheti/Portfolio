@@ -13,6 +13,7 @@
       margin: 0;
       font-family: 'Coolvetica';
       font-weight: 400;
+      line-height: 53px;
 
       &::before {
         content: '<h1>';
@@ -21,7 +22,7 @@
         font-size: 18px;
         position: absolute;
         margin-top: -40px;
-        left: 15px;
+        left: -10px;
         opacity: 0.6;
       }
 
@@ -31,7 +32,7 @@
         color: #1aafbc;
         font-size: 18px;
         position: absolute;
-        margin-top: 18px;
+        margin-top: 20px;
         margin-left: 20px;
         animation: fadeIn 1s 1.7s backwards;
         opacity: 0.6;
@@ -66,6 +67,7 @@
         border-radius: var(--button_radius);
         background: var(--button_outline_color);
         cursor: pointer;
+        font-family: Dosis, sans-serif;
       }
 
       .button_top {

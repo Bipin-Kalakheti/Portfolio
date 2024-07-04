@@ -1,7 +1,7 @@
 import './index.scss'
 import { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
-import Loader from 'react-loaders'
+import Loader from '../Loader/index'
 import HeroImg from '../../assets/images/hero-img.png'
 import Resume from '../../assets/images/cv.pdf'
 
@@ -29,7 +29,7 @@ const Home = () => {
   }
 
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = ['i', 'p', 'i', 'n']
+  const nameArray = ['i', 'p', 'i', 'n', ',']
   const jobArray = [
     'w',
     'e',
@@ -113,13 +113,13 @@ const Home = () => {
           <div>
             <a href={Resume} download>
               <button>
-                <span class="button_top"> Resume</span>
+                <span className="button_top"> Resume</span>
               </button>
             </a>
 
-            <a href="/contact">
+            <a href="/Portfolio/contact">
               <button>
-                <span class="button_top"> Contact Me</span>
+                <span className="button_top"> Contact Me</span>
               </button>
             </a>
           </div>
@@ -128,7 +128,7 @@ const Home = () => {
           <img src={HeroImg} alt="" />
         </div>
       </div>
-      <Loader type="pacman" />
+      <Loader />
     </>
   )
 }

@@ -4,11 +4,12 @@ $primary-color: #1aafbc;
 @import '~loaders.css/src/animations/pacman.scss';
 
 @font-face {
-  font-family: 'Helvetica Neue';
-  src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
+  font-family: 'NunitoSans';
+  src: url('./assets/fonts/NunitoSans_7pt-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600..800&display=swap');
 
 @font-face {
   font-family: 'La Belle Aurore';
@@ -28,7 +29,7 @@ $primary-color: #1aafbc;
 
 input,
 textarea {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Dosis', sans-serif;
 }
 
 .loader-hidden {

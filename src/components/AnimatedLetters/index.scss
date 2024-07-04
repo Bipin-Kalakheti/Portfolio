@@ -6,6 +6,8 @@
   animation: textShadowEffect 1s, bounceIn 1s 1s;
   animation-fill-mode: forwards;
   min-width: 10px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 .text-animate-hover {
@@ -14,9 +16,11 @@
   display: inline-block;
   animation-fill-mode: both;
   animation: rubberBand 1s;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
   text-shadow: 4px 4px var(--shadow-color);
   &:hover {
-    color: #1aafbc;
+    color: var(--secondary-color);
   }
 }
 

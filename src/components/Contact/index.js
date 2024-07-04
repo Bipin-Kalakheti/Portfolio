@@ -1,4 +1,4 @@
-import Loader from 'react-loaders'
+import Loader from '../Loader/index'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import { useEffect, useRef, useState } from 'react'
@@ -47,7 +47,8 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in programming languages and programming languages.
+            Interested in collaborating or have questions? I'd love to connect!
+            Let's create something amazing together.
           </p>
           <div className="contact-form">
             <form ref={refForm} onSubmit={sendEmail}>

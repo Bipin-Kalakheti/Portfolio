@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './index.scss'
-import Loader from 'react-loaders'
+import Loader from '../Loader/index'
 import AnimatedLetters from '../AnimatedLetters'
 import ProjectCard from '../../common/ProjectCard'
 import ChatApp from '../../assets/images/ChatApp.png'
@@ -42,7 +42,7 @@ const Works = () => {
         <h1 className="page-title text-zone">
           <AnimatedLetters
             idx={15}
-            strArray={'works'.split('')}
+            strArray={'Works'.split('')}
             letterClass={letterClass}
           />
         </h1>

@@ -79,8 +79,8 @@
   }
 
   p {
-    font-family: sans-serif;
-    font-style: 13px;
+    font-family: 'Dosis', 'Coolvetica', sans-serif;
+    font-size: 1.5rem;
     color: #000000;
     font-weight: 300;
     min-width: fit-content;
@@ -95,6 +95,9 @@
     &:nth-of-type(3) {
       animation-delay: 1.8s;
     }
+    &:nth-of-type(4) {
+      animation-delay: 2s;
+    }
   }
 
   .text-zone {
@@ -105,13 +108,8 @@
     width: 35%;
     vertical-align: middle;
     display: table-cell;
-    max-height: 90%;
-  }
 
-  .text-animate-hover {
-    &:hover {
-      color: #fff;
-    }
+    max-height: 90%;
   }
 }
 
