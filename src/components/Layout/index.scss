@@ -40,7 +40,7 @@
 
 .about-page,
 .contact-page,
-.portfolio-page {
+.works-page {
   h1 {
     font-size: 53px;
     font-family: 'Coolvetica';
@@ -126,7 +126,7 @@
 
     &.about-page,
     &.contact-page,
-    &.portfolio-page {
+    &.works-page {
       .text-zone {
         position: initial;
         transform: none;

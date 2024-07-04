@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import './index.scss'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
-import portfolioData from '../../data/portfolio.json'
 import ProjectCard from '../../common/ProjectCard'
 import ChatApp from '../../assets/images/ChatApp.png'
 import Tomato from '../../assets/images/tomato.png'
@@ -15,7 +14,7 @@ import Node from '../Icons/Node'
 import Mongodb from '../Icons/Mongodb'
 import Stripe from '../Icons/Stripe'
 
-const Portfolio = () => {
+const Works = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const chatAppTools = [<Reacts />, <Firebase />]
   const tomatoTools = [
@@ -39,11 +38,11 @@ const Portfolio = () => {
 
   return (
     <>
-      <div className="container portfolio-page">
+      <div className="container works-page">
         <h1 className="page-title text-zone">
           <AnimatedLetters
             idx={15}
-            strArray={'Portfolio'.split('')}
+            strArray={'works'.split('')}
             letterClass={letterClass}
           />
         </h1>
@@ -69,4 +68,4 @@ const Portfolio = () => {
   )
 }
 
-export default Portfolio
+export default Works

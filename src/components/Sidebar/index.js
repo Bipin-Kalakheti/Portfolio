@@ -53,8 +53,8 @@ const Sidebar = () => {
           <NavLink
             exact="true"
             activeclassname="active"
-            className="portfolio-link"
-            to="/portfolio"
+            className="works-link"
+            to="/Works"
             onClick={() => setShowNav(false)}
           >
             <FontAwesomeIcon icon={faScrewdriverWrench} color="#4d4d4e" />

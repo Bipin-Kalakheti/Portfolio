@@ -1,4 +1,4 @@
-.portfolio-page {
+.works-page {
   padding-left: 100px;
   padding-right: 50px;
   width: calc(100% - 150px);
@@ -21,7 +21,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .container.portfolio-page {
+  .container.works-page {
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
