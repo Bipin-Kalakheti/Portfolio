@@ -13,6 +13,7 @@ import Firebase from '../Icons/Firebase'
 import Node from '../Icons/Node'
 import Mongodb from '../Icons/Mongodb'
 import Stripe from '../Icons/Stripe'
+import { motion } from 'framer-motion'
 
 const Works = () => {
   const [letterClass, setLetterClass] = useState('text-animate')

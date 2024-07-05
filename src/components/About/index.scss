@@ -104,6 +104,13 @@
         white 100%,
         transparent
       );
+
+      .scroller_inner {
+        padding: 0.5rem;
+        svg {
+          transform: rotate(-90deg);
+        }
+      }
     }
   }
 }

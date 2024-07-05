@@ -3,7 +3,6 @@ import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import { useEffect, useRef, useState } from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-
 import emailjs from '@emailjs/browser'
 
 const Contact = () => {
@@ -87,7 +86,7 @@ const Contact = () => {
                 ></textarea>
                 <span>Message</span>
               </div>
-              <div className='send-btn'>
+              <div className="send-btn">
                 <button type="submit" value="SEND">
                   <span className="button_top ">
                     <div className="svg-wrapper-1">

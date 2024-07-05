@@ -4,6 +4,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import Loader from '../Loader/index'
 import HeroImg from '../../assets/images/hero-img.png'
 import Resume from '../../assets/images/cv.pdf'
+import { motion } from 'framer-motion'
 
 const Home = () => {
   const handleMouseEnter = (event) => {
@@ -56,7 +57,16 @@ const Home = () => {
     // Return a cleanup function to clear the timeout if the component unmounts
     return () => clearTimeout(timer)
   }, [])
+  useEffect(() => {
+    const pageElement = document.querySelector('.container')
+    pageElement.classList.add('scale-effect')
+    const timer = setTimeout(() => {
+      pageElement.classList.remove('scale-effect')
+      pageElement.classList.add('scale-back')
+    }, 500) // Match the duration of your CSS transition
 
+    return () => clearTimeout(timer)
+  }, [])
   return (
     <>
       <div className="container home-page">
