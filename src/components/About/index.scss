@@ -67,6 +67,10 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .about-page {
+    padding-bottom: 0;
+  }
+
   .scroller-container {
     display: flex;
     flex-direction: column;
