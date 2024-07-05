@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.c09f6de9.css",
-    "main.js": "/Portfolio/static/js/main.35aa130f.js",
+    "main.css": "/Portfolio/static/css/main.34aafe0c.css",
+    "main.js": "/Portfolio/static/js/main.e9758115.js",
     "static/js/453.0a7f0965.chunk.js": "/Portfolio/static/js/453.0a7f0965.chunk.js",
     "static/media/tomato.png": "/Portfolio/static/media/tomato.29c6def99f32af82d1bc.png",
     "static/media/cv.pdf": "/Portfolio/static/media/cv.86fb441ff9f565971dcc.pdf",
     "static/media/ChatApp.png": "/Portfolio/static/media/ChatApp.2b4e1d64436858aaf22c.png",
-    "static/media/hero-img.png": "/Portfolio/static/media/hero-img.19069bfbd3050235395f.png",
+    "static/media/hero-img.png": "/Portfolio/static/media/hero-img.c37e5e6e13a1aef775a3.png",
     "static/media/logo-s.png": "/Portfolio/static/media/logo-s.1a52c7a4866274015cbb.png",
     "static/media/NunitoSans_7pt-Regular.ttf": "/Portfolio/static/media/NunitoSans_7pt-Regular.a02d444a210c95569024.ttf",
     "static/media/logo_subB.png": "/Portfolio/static/media/logo_subB.9f181a9adcf698090c36.png",
@@ -15,12 +15,12 @@
     "static/media/CoolveticaRg-Regular.woff": "/Portfolio/static/media/CoolveticaRg-Regular.8307bfa187bccdc55f4d.woff",
     "static/media/CoolveticaRg-Regular.woff2": "/Portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/Portfolio/index.html",
-    "main.c09f6de9.css.map": "/Portfolio/static/css/main.c09f6de9.css.map",
-    "main.35aa130f.js.map": "/Portfolio/static/js/main.35aa130f.js.map",
+    "main.34aafe0c.css.map": "/Portfolio/static/css/main.34aafe0c.css.map",
+    "main.e9758115.js.map": "/Portfolio/static/js/main.e9758115.js.map",
     "453.0a7f0965.chunk.js.map": "/Portfolio/static/js/453.0a7f0965.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c09f6de9.css",
-    "static/js/main.35aa130f.js"
+    "static/css/main.34aafe0c.css",
+    "static/js/main.e9758115.js"
   ]
 }
