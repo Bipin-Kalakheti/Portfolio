@@ -36,11 +36,11 @@ function ProjectCard({
           <div class="social-links">
             <div id="github" class="social-btn flex-center">
               <Github />
-              <span>View Code</span>
+              <span className="btn-lnk">View Code</span>
             </div>
             <div id="linkedin" class="social-btn flex-center">
               <Live />
-              <span>View Live</span>
+              <span className="btn-lnk">View Live</span>
             </div>
           </div>
         </div>
