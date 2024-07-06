@@ -67,6 +67,21 @@ const Home = () => {
 
     return () => clearTimeout(timer)
   }, [])
+  useEffect(() => {
+    const imgContainer = document.querySelector('.img-container')
+    const handleMouseEnter = () => imgContainer.classList.add('swing')
+    const handleAnimationEnd = () => imgContainer.classList.remove('swing')
+
+    imgContainer.addEventListener('mouseenter', handleMouseEnter)
+    imgContainer.addEventListener('animationend', handleAnimationEnd)
+
+    // Cleanup function to remove event listeners
+    return () => {
+      imgContainer.removeEventListener('mouseenter', handleMouseEnter)
+      imgContainer.removeEventListener('animationend', handleAnimationEnd)
+    }
+  }, [])
+
   return (
     <>
       <div className="container home-page">

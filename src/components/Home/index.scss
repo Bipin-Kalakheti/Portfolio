@@ -92,19 +92,29 @@
       }
     }
   }
-
+  .img-container.swing {
+    animation: swing 1s forwards;
+  }
   .img-container {
-    width: 400px;
-    height: 100vh;
+    width: 500px;
+    height: 500px;
     position: absolute;
     right: 15%;
     bottom: -20;
     left: auto;
     top: 80px;
 
+    border-radius: 100%;
+    overflow: hidden;
     margin: auto;
+    padding-left: 40px;
 
     img {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%; // Ensure the image does not exceed the container width
+      max-height: 100%;
+
       opacity: 0;
       animation: jackInTheBox 1.5s ease-in-out, fadeIn 0.5s forwards;
 
@@ -165,5 +175,17 @@
 @keyframes fadeIn {
   to {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .page .home-page .img-container {
+    width: 90vw;
+    padding-left: 30px;
+    aspect-ratio: 1/1;
+    animation: none;
+    img {
+      max-height: 90vw;
+    }
   }
 }
