@@ -9,7 +9,7 @@
     max-height: 90%;
 
     h1 {
-      color: #812626;
+      color: var(--main-color);
       font-size: 53px;
       margin: 0;
       font-family: 'Coolvetica';
@@ -58,10 +58,6 @@
       gap: 20px;
 
       button {
-        /* Variables */
-        --button_radius: 0.75em;
-        --button_color: #e8e8e8;
-        --button_outline_color: #000000;
         font-size: 17px;
         font-weight: bold;
         border: none;
@@ -78,6 +74,8 @@
         border-radius: var(--button_radius);
         padding: 0.75em 1.5em;
         background: var(--button_color);
+        background-image: url('../../assets/images/noise.png');
+        opacity: 0.75;
         color: var(--button_outline_color);
         transform: translateY(-0.2em);
         transition: transform 0.1s ease;
@@ -137,7 +135,6 @@
       transform: translateY(40%);
       padding: 10px;
       box-sizing: border-box;
-      
     }
 
     .flat-button {
@@ -165,7 +162,9 @@
         max-width: 400px;
         max-height: 80vh; // Full viewport height
         object-fit: contain; // Cover the container fully, might crop the image
+
         margin: 0 auto; // Center the image horizontally within the container
+        animation: bounceIn 1s forwards;
       }
     }
   }
