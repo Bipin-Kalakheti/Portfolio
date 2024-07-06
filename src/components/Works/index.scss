@@ -35,9 +35,12 @@
     padding: 10px;
     background-color: white;
 
-    transition: 0.3s ease-in-out;
+    transition: box-shadow 0.3s, 0.3s ease-in-out;
 
     animation: backInLeft 1s forwards, fadeIn 1s forwards;
+    &:hover {
+      transform: translate(-10px, -10px);
+    }
 
     @keyframes fadeIn {
       to {

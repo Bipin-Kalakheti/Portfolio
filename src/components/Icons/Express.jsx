@@ -1,5 +1,7 @@
 const Express = () => {
   return (
+    <div className="icon-container">
+      <span className="tooltip">Express</span>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       x="0px"
@@ -28,6 +30,7 @@ const Express = () => {
         ></path>
       </g>
     </svg>
+    </div>
   )
 }
 

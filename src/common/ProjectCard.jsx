@@ -16,7 +16,10 @@ function ProjectCard({
     <div className="card fixblock">
       <div className="card-content">
         <div className="card-title">
-          <h2>{projectTitle}</h2>
+          <span class="card__title">
+            {' '}
+            <h2>{projectTitle}</h2>
+          </span>
         </div>
         <div className="card-description">
           <p>{projectDescription}</p>

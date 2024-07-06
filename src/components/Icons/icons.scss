@@ -7,9 +7,13 @@
 }
 
 .tooltip {
-  background-color: #00a36d;
-  font-size: smaller;
+  background-color: var(--main-color);
+  opacity: 0.8;
+  color: white;
+  font-size: 14px;
+  font-family: 'Dosis', sans-serif;
   position: absolute;
+  letter-spacing: 1px;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -17,11 +21,12 @@
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s;
-  border-radius: 50px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
 }
 
 .tooltip::before {
-  background-color: #00a36d;
+  background-color: var(--main-color);
   position: absolute;
   content: '';
   height: 0.6em;
