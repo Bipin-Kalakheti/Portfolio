@@ -35,12 +35,9 @@
     padding: 10px;
     background-color: white;
 
-    transition: box-shadow 0.3s, 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
-    animation: backInLeft 1s forwards, fadeIn 1s forwards;
-    &:hover {
-      transform: translate(-10px, -10px);
-    }
+    animation: backInLeft 1s ease-in-out, fadeIn 1s forwards;
 
     @keyframes fadeIn {
       to {
@@ -55,9 +52,8 @@
     }
 
     &:hover {
-      .card-image img {
-        transform: scale(1.2);
-      }
+      transform: translate(-5px, -5px);
+      box-shadow: 17px 17px 0 #000;
     }
 
     .card-content {
@@ -98,7 +94,6 @@
           width: 100%;
           height: 100%;
           object-fit: cover;
-          transition: 0.3s ease-in-out;
         }
       }
       .card-link {

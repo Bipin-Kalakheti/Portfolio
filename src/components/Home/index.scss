@@ -84,7 +84,9 @@
       button:hover .button_top {
         /* Pull the button upwards when hovered */
         transform: translateY(-0.33em);
+
       }
+      
 
       button:active .button_top {
         /* Push the button downwards when pressed */
