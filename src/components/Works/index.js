@@ -15,6 +15,9 @@ import Node from '../Icons/Node'
 import Mongodb from '../Icons/Mongodb'
 import Stripe from '../Icons/Stripe'
 import { motion } from 'framer-motion'
+import Nextjs from '../Icons/Nextjs'
+import Prisma from '../Icons/Prisma'
+import Tailwind from '../Icons/Tailwind'
 
 const Works = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -27,7 +30,7 @@ const Works = () => {
     <Stripe />,
   ]
 
-  const RojGarTools = [<Node />]
+  const RojGarTools = [<Node />, <Nextjs />, <Prisma />, <Tailwind />]
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -54,30 +57,30 @@ const Works = () => {
           <ProjectCard
             src={GuffGaff}
             sourceLink="https://github.com/Bipin-Kalakheti/GuffGaff"
-            liveLink = 'https://chatapp-e9717.firebaseapp.com'
+            liveLink="https://chatapp-e9717.firebaseapp.com"
             projectTitle="GuffGaff"
-            projectDescription="Online Chatting Web App"
+            projectDescription="A React-based real-time chat app leveraging Firebase for backend services."
             toolsUsed={GuffGaffTools}
           />
           <ProjectCard
             src={KhajaGhar}
             sourceLink="https://github.com/Bipin-Kalakheti/KhajaGhar"
-            liveLink = 'https://khajaaghaar.netlify.app/'
+            liveLink="https://khajaaghaar.netlify.app/"
             projectTitle="KhajaGhar"
-            projectDescription="Food Delivery Web App"
+            projectDescription="A full-stack food ordering web application built with the MERN stack. "
             toolsUsed={KhajaGharTools}
           />
           <ProjectCard
             src={RojGar}
             sourceLink="https://github.com/Bipin-Kalakheti/RojGar"
-            liveLink = 'https://rojgar-jade.vercel.app/'
+            liveLink="https://rojgar-jade.vercel.app/"
             projectTitle="RojGar"
-            projectDescription="A job tracking application - Under Development"
+            projectDescription="A NextJs app, designed to manage and organize job applications, statuses, and related notes."
             toolsUsed={RojGarTools}
           />
         </div>
       </div>
-      <Loader type="pacman" />
+      <Loader />
     </>
   )
 }

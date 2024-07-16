@@ -33,7 +33,7 @@
     max-width: 250px;
     opacity: 0;
     padding: 10px;
-    background-color: white;
+    background-color: #e8e8e8;
 
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
@@ -53,11 +53,40 @@
 
     &:nth-of-type(3) {
       animation-delay: 2s;
+      overflow: hidden;
+      &::after {
+        opacity: 0;
+        content: '';
+        position: absolute;
+        top: 30%;
+        height: 200px;
+        width: 100%;
+        background-image: url(../../assets/images/under.png);
+        background-size: cover;
+        transform: translateX(100%);
+      }
+
+      &:hover {
+        transition: all 0.3s ease-in;
+        &::after {
+          opacity: 1;
+          transform: translateX(-4%);
+          transition: transform 0.5s;
+        }
+      }
     }
 
     &:hover {
       transform: translate(-5px, -5px);
       box-shadow: 17px 17px 0 #000;
+
+      .tools-used {
+        box-shadow: #323232 0px 4px 1px, #000 0px 5px 4px;
+      }
+      .card-image {
+        box-shadow: #323232 0px 4px 1px, #000 0px 5px 4px;
+        border: none;
+      }
     }
 
     .card-content {
@@ -76,10 +105,16 @@
 
       .tools-used {
         display: flex;
+        justify-content: space-evenly;
+        align-items: center;
         gap: 5px;
         flex-wrap: wrap;
         font-size: 0.8em;
-        color: #333;
+        border-radius: 5px;
+        padding: 3px;
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+        border: 2px solid black;
 
         svg {
           height: 30px;
@@ -93,6 +128,8 @@
         height: 200px;
         overflow: hidden;
         border-radius: 7px;
+        transition: all 0.3s ease-in-out;
+        border: 1px solid #323232;
 
         img {
           width: 100%;
@@ -106,6 +143,12 @@
           display: flex;
           justify-content: center;
           align-items: center;
+
+          a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+          }
         }
 
         .social-btn {
@@ -115,11 +158,11 @@
           height: 50px;
           width: 50px;
           font-family: 'Titillium Web', sans-serif;
-          color: #333;
+          color: #1a0101;
           border-radius: 10px;
           border: 2px solid #323232;
           box-shadow: #323232 0px 4px 1px, #000 0px 5px 4px;
-          background: white;
+          background: #e8e8e8;
           margin: 5px;
           transition: 0.3s;
           justify-content: center;
@@ -131,6 +174,7 @@
           margin-left: auto;
           margin-right: auto;
           transition: 0.3s ease-in-out;
+          fill: #000;
         }
 
         .social-btn span {
@@ -156,18 +200,6 @@
         .social-btn:hover span {
           padding: 2px;
           width: 100px;
-        }
-
-        #twitter svg {
-          fill: #1da1f2;
-        }
-
-        #linkedin svg {
-          fill: #0e76a8;
-        }
-
-        #github {
-          fill: #333;
         }
       }
     }

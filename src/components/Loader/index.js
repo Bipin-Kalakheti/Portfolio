@@ -21,6 +21,13 @@ const Loader = () => {
             x: 50,
             opacity: 0,
             duration: 0.5,
+            onComplete: () => {
+              document
+                .querySelectorAll('.loader-container, .loader, .truckWrapper')
+                .forEach((el) => {
+                  el.style.display = 'none'
+                })
+            },
           })
         },
       }
