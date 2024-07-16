@@ -52,38 +52,19 @@ const Contact = () => {
           <div className="contact-form">
             <form ref={refForm} onSubmit={sendEmail}>
               <div className="inputBox left-scrollAnimate">
-                <input
-                  type="text"
-                  name="user_name"
-                  className="block block-focus"
-                  required
-                />
+                <input type="text" name="user_name" className="" required />
                 <span>Full Name</span>
               </div>
               <div className="inputBox right-scrollAnimate ">
-                <input
-                  type="email"
-                  name="user_email"
-                  className="block block-focus"
-                  required
-                />
+                <input type="email" name="user_email" className="" required />
                 <span>Email</span>
               </div>
               <div className="inputBox left-scrollAnimate extraWidth">
-                <input
-                  type="text"
-                  name="subject"
-                  className="block block-focus"
-                  required
-                />
+                <input type="text" name="subject" className="" required />
                 <span>Subject</span>
               </div>
               <div className="inputBox right-scrollAnimate extraWidth">
-                <textarea
-                  name="message"
-                  className="block block-focus"
-                  required
-                ></textarea>
+                <textarea name="message" className="" required></textarea>
                 <span>Message</span>
               </div>
               <div className="send-btn">

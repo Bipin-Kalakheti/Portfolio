@@ -3,8 +3,9 @@ import './index.scss'
 import Loader from '../Loader/index'
 import AnimatedLetters from '../AnimatedLetters'
 import ProjectCard from '../../common/ProjectCard'
-import ChatApp from '../../assets/images/ChatApp.png'
-import Tomato from '../../assets/images/tomato.png'
+import GuffGaff from '../../assets/images/GuffGaff.png'
+import KhajaGhar from '../../assets/images/KhajaGhar.png'
+import RojGar from '../../assets/images/RojGar.png'
 import Github from '../Icons/Github'
 import Live from '../Icons/Live'
 import Express from '../Icons/Express'
@@ -17,14 +18,16 @@ import { motion } from 'framer-motion'
 
 const Works = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const chatAppTools = [<Reacts />, <Firebase />]
-  const tomatoTools = [
+  const GuffGaffTools = [<Reacts />, <Firebase />]
+  const KhajaGharTools = [
     <Reacts />,
     <Node />,
     <Express />,
     <Mongodb />,
     <Stripe />,
   ]
+
+  const RojGarTools = [<Node />]
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -49,18 +52,28 @@ const Works = () => {
         </h1>
         <div className="projectsContainer scroll-animate">
           <ProjectCard
-            src={ChatApp}
-            link="https://github.com"
-            projectTitle="ChatApp"
+            src={GuffGaff}
+            sourceLink="https://github.com/Bipin-Kalakheti/GuffGaff"
+            liveLink = 'https://chatapp-e9717.firebaseapp.com'
+            projectTitle="GuffGaff"
             projectDescription="Online Chatting Web App"
-            toolsUsed={chatAppTools}
+            toolsUsed={GuffGaffTools}
           />
           <ProjectCard
-            src={Tomato}
-            link="https://github.com"
-            projectTitle="Tomato"
+            src={KhajaGhar}
+            sourceLink="https://github.com/Bipin-Kalakheti/KhajaGhar"
+            liveLink = 'https://khajaaghaar.netlify.app/'
+            projectTitle="KhajaGhar"
             projectDescription="Food Delivery Web App"
-            toolsUsed={tomatoTools}
+            toolsUsed={KhajaGharTools}
+          />
+          <ProjectCard
+            src={RojGar}
+            sourceLink="https://github.com/Bipin-Kalakheti/RojGar"
+            liveLink = 'https://rojgar-jade.vercel.app/'
+            projectTitle="RojGar"
+            projectDescription="A job tracking application - Under Development"
+            toolsUsed={RojGarTools}
           />
         </div>
       </div>

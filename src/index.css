@@ -11,7 +11,7 @@ body {
   margin: 0;
   font: 300 11px/1.4 'Dosis', 'san-serif';
   color: #444;
-  background: #ffffff;
+  background: #e8e8e8;
   overflow: hidden;
   display: block;
   -webkit-font-smoothing: antialiased;
@@ -38,7 +38,7 @@ body {
   --footer-text-color: #888;
   --shadow-color: #323232;
   --main-color: #f83d3d;
-  --secondary-color: #1aafbc;
+  --secondary-color: #00beff;
   --border-color: #0000;
   --button_radius: 0.75em;
   --button_color: #e8e8e8;

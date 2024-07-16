@@ -7,7 +7,8 @@ import React from 'react'
 
 function ProjectCard({
   src,
-  link,
+  sourceLink,
+  liveLink,
   projectTitle,
   projectDescription,
   toolsUsed,
@@ -34,14 +35,18 @@ function ProjectCard({
         </div>
         <div className="card-link">
           <div class="social-links">
+          <a href={sourceLink} target="_blank" rel="noopener noreferrer">
             <div id="github" class="social-btn flex-center">
               <Github />
               <span className="btn-lnk">View Code</span>
             </div>
+            </a>
+            <a href={liveLink} target="_blank" rel="noopener noreferrer">
             <div id="linkedin" class="social-btn flex-center">
               <Live />
               <span className="btn-lnk">View Live</span>
             </div>
+            </a>
           </div>
         </div>
       </div>
