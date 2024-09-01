@@ -139,13 +139,13 @@ const Home = () => {
             Freelancer
           </h2>
           <div>
-            <a href={" "} download>
+            <a href={' '} download>
               <button>
                 <span className="button_top"> Resume</span>
               </button>
             </a>
 
-            <a href="/Portfolio/contact">
+            <a href="#/contact">
               <button>
                 <span className="button_top"> Contact Me</span>
               </button>
