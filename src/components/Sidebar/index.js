@@ -48,7 +48,7 @@ const Sidebar = () => {
             exact="true"
             activeclassname="active"
             className="about-link"
-            to="/about"
+            to="/About"
             onClick={() => {}}
           >
             <FontAwesomeIcon icon={faUser} color="#4d4d4e" />

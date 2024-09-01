@@ -145,7 +145,7 @@ const Home = () => {
               </button>
             </a>
 
-            <a href="#/contact">
+            <a href="#/Contact">
               <button>
                 <span className="button_top"> Contact Me</span>
               </button>
