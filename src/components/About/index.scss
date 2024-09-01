@@ -21,7 +21,7 @@
   position: absolute;
   right: 0;
   opacity: 0;
-  animation: backInRight 1s 1.2s;
+  animation: backInRight 2s 1s;
   animation-fill-mode: both;
 
   &:nth-of-type(1) {
@@ -45,6 +45,7 @@
   flex-wrap: nowrap;
   animation: scroll var(--_animation-duration, 50s)
     var(--_animation-direction, forwards) linear infinite;
+  animation-delay: 3.2s;
 
   &:hover {
     animation-play-state: paused;
