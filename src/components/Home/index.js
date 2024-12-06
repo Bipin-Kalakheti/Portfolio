@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import Loader from '../Loader/index'
 import HeroImg from '../../assets/images/hero-img.png'
-import Resume from '../../assets/images/cv.pdf'
+import Resume from '../../assets/images/Resume.pdf'
 import { motion } from 'framer-motion'
 
 const Home = () => {
@@ -139,7 +139,7 @@ const Home = () => {
             Freelancer
           </h2>
           <div>
-            <a href={' '} download>
+            <a href={Resume} download>
               <button>
                 <span className="button_top"> Resume</span>
               </button>
