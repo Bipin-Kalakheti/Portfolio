@@ -4,7 +4,6 @@ import AnimatedLetters from '../AnimatedLetters'
 import Loader from '../Loader/index'
 import HeroImg from '../../assets/images/hero-img.png'
 import Resume from '../../assets/images/Resume.pdf'
-import { motion } from 'framer-motion'
 
 const Home = () => {
   const handleMouseEnter = (event) => {
@@ -32,11 +31,16 @@ const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const nameArray = ['i', 'p', 'i', 'n', ',']
   const jobArray = [
+    'S',
+    'o',
+    'f',
+    't',
     'w',
+    'a',
+    'r',
     'e',
-    'b',
     ' ',
-    'd',
+    'D',
     'e',
     'v',
     'e',
@@ -45,7 +49,6 @@ const Home = () => {
     'p',
     'e',
     'r',
-    '.',
   ]
 
   useEffect(() => {
