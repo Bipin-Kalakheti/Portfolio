@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import Loader from '../Loader/index'
 import HeroImg from '../../assets/images/hero-img.png'
-import Resume from '../../assets/images/Resume.pdf'
+import Bipin_Kalakheti_Resume from '../../assets/CV/Bipin_Kalakheti_Resume.pdf'
 
 const Home = () => {
   const handleMouseEnter = (event) => {
@@ -142,7 +142,11 @@ const Home = () => {
             Freelancer
           </h2>
           <div>
-            <a href={Resume} download>
+            <a
+              href={Bipin_Kalakheti_Resume}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button>
                 <span className="button_top"> Resume</span>
               </button>
