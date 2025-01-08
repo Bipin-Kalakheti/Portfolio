@@ -13,6 +13,8 @@ body {
   color: #444;
   background: #e8e8e8;
   overflow: hidden;
+  background-image: url('assets/images/noise.png');
+  background-size: 100px 100px;
   display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
