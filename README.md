@@ -1,8 +1,15 @@
 # Bipin Kalakheti's Portfolio
 
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fbipinkalakheti.github.io%2FPortfolio)](https://bipinkalakheti.github.io/Portfolio)
+[![GitHub stars](https://img.shields.io/github/stars/Bipin-Kalakheti/Portfolio)](https://github.com/Bipin-Kalakheti/Portfolio/stargazers)
+
+Welcome to my personal portfolio website! This project showcases my skills, projects, and experience as a web developer.
+
+## 🎯 Preview
+
 ![Portfolio Preview](src/assets/images/site.png)
 
-Welcome to my personal portfolio website! This project showcases my skills, projects, and experience as a web developer. It is built using modern web technologies and is designed to be responsive and visually appealing.
+[Live Demo](https://bipinkalakheti.github.io/Portfolio)
 
 ## Table of Contents
 
@@ -19,14 +26,15 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 This portfolio website is a comprehensive showcase of my work as a web developer. It includes sections for my projects, skills, resume, and contact information. The site is designed to be user-friendly and visually engaging, providing visitors with a clear understanding of my capabilities and experience.
 
-## Features
+## ✨ Features
 
-- **Responsive Design**: The website is fully responsive and works seamlessly on all devices, including desktops, tablets, and smartphones.
-- **Animated Transitions**: Smooth and engaging animations enhance the user experience.
-- **Project Showcase**: Detailed information about my projects, including live links and source code.
-- **Skills Section**: A visual representation of my technical skills.
-- **Contact Form**: A functional contact form for visitors to get in touch with me.
-- **Resume Download**: Easy access to download my resume.
+- 🎨 Modern and clean design
+- 📱 Fully responsive layout
+- ⚡ Smooth animations and transitions
+- 📂 Detailed project showcase
+- 📊 Interactive skills visualization
+- 📬 Functional contact form
+- 📄 Downloadable resume
 
 ## Technologies Used
 
@@ -36,24 +44,24 @@ This portfolio website is a comprehensive showcase of my work as a web developer
 - **EmailJS**: A service for sending emails directly from the client-side.
 - **React Router**: A library for routing in React applications.
 
-## Installation
+## 🚀 Quick Start
 
-To run this project locally, follow these steps:
-
-1. **Clone the repository**:
+1. **Clone and install**
 
    ```sh
    git clone https://github.com/Bipin-Kalakheti/Portfolio.git
    cd Portfolio
-   ```
-
-2. **Install dependencies**:
-
-   ```sh
    npm install
    ```
 
-3. **Start the development server**:
+2. **Set up environment variables**
+
+   ```sh
+   cp .env.example .env
+   # Edit .env with your EmailJS credentials
+   ```
+
+3. **Start development server**
 
    ```sh
    npm start
@@ -103,7 +111,30 @@ package.json
 README.md
 ```
 
-🌐 Deployment
+## 🛠️ Development
+
+### Prerequisites
+
+- Node.js >= 14.x
+- npm >= 6.x
+
+### Code Style
+
+This project uses Prettier for code formatting. Run:
+
+```sh
+npm run format
+```
+
+## 🙏 Acknowledgments
+
+- [React](https://reactjs.org/)
+- [EmailJS](https://www.emailjs.com/)
+- [Font Awesome](https://fontawesome.com/)
+- All my supporters and mentors
+
+##🌐 Deployment
+
 The site is deployed using GitHub Pages. You can visit it at: https://bipinkalakheti.github.io/Portfolio
 
 ## Contact
